@@ -16,5 +16,8 @@ jobs:
       with:
         arguments: build
         build-root-directory: app
-    - run: ./gradlew checkStyleMain
+
+    - name: Run checkStyle
+      working-directory: app
+      run: ./gradlew checkStyleMain
         
