@@ -20,13 +20,13 @@ public class StringSchema {
         isRequired = true;
     }
 
-    public StringSchema contains(String symbols) {
-        this.symbols = symbols;
+    public StringSchema contains(String pSymbols) {
+        this.symbols = pSymbols;
         return this;
     }
 
-    public StringSchema minLength(int minLength) {
-        this.minLength = minLength;
+    public StringSchema minLength(int pMinLength) {
+        this.minLength = pMinLength;
         return this;
     }
 

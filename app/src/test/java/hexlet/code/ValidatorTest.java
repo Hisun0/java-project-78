@@ -1,8 +1,6 @@
 package hexlet.code;
 
-import hexlet.code.Validator;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ValidatorTest {
