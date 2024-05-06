@@ -8,8 +8,8 @@ import java.util.Map;
 public final class ShapeState implements State<Map<String, String>> {
     private final Map<String, BaseSchema<String>> schemas;
 
-    public ShapeState(Map<String, BaseSchema<String>> schemas) {
-        this.schemas = schemas;
+    public ShapeState(Map<String, BaseSchema<String>> pSchemas) {
+        schemas = pSchemas;
     }
 
     @Override

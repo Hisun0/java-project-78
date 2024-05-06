@@ -12,7 +12,7 @@ public abstract class BaseSchema<T> {
         return states.stream().allMatch(state -> state.isValid(value));
     }
 
-    public List<State> getStates() {
+    public final List<State> getStates() {
         return states;
     }
 }

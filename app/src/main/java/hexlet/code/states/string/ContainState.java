@@ -2,11 +2,11 @@ package hexlet.code.states.string;
 
 import hexlet.code.states.State;
 
-public class ContainState implements State<String> {
+public final class ContainState implements State<String> {
     private final String symbols;
 
-    public ContainState(String symbols) {
-        this.symbols = symbols;
+    public ContainState(String pSymbols) {
+        symbols = pSymbols;
     }
 
     @Override
