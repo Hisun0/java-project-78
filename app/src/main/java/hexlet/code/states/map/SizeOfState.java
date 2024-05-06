@@ -5,7 +5,7 @@ import hexlet.code.states.State;
 import java.util.Map;
 
 public class SizeOfState implements State<Map<String, String>> {
-    private int sizeOf;
+    private final int sizeOf;
 
     public SizeOfState(int sizeOf) {
         this.sizeOf = sizeOf;

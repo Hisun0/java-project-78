@@ -3,8 +3,8 @@ package hexlet.code.states.number;
 import hexlet.code.states.State;
 
 public class RangeState implements State<Integer> {
-    private Integer min;
-    private Integer max;
+    private final Integer min;
+    private final Integer max;
 
     public RangeState(Integer min, Integer max) {
         this.max = max;
