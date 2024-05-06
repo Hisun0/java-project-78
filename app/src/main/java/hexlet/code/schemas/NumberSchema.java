@@ -1,12 +1,12 @@
 package hexlet.code.schemas;
 
+import hexlet.code.states.RequiredState;
 import hexlet.code.states.number.PositiveState;
 import hexlet.code.states.number.RangeState;
-import hexlet.code.states.number.RequiredState;
 
 public class NumberSchema extends BaseSchema<Integer> {
     public NumberSchema required() {
-        Utils.updateState(states, new RequiredState());
+        Utils.updateState(states, new RequiredState<Integer>());
         return this;
     }
 
