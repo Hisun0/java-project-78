@@ -5,7 +5,7 @@ import hexlet.code.states.State;
 
 import java.util.Map;
 
-public class ShapeState implements State<Map<String, String>> {
+public final class ShapeState implements State<Map<String, String>> {
     private final Map<String, BaseSchema<String>> schemas;
 
     public ShapeState(Map<String, BaseSchema<String>> schemas) {

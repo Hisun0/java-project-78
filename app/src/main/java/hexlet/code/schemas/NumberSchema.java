@@ -4,19 +4,19 @@ import hexlet.code.states.RequiredState;
 import hexlet.code.states.number.PositiveState;
 import hexlet.code.states.number.RangeState;
 
-public class NumberSchema extends BaseSchema<Integer> {
+public final class NumberSchema extends BaseSchema<Integer> {
     public NumberSchema required() {
-        Utils.updateState(states, new RequiredState<Integer>());
+        Utils.updateState(getStates(), new RequiredState<Integer>());
         return this;
     }
 
     public NumberSchema positive() {
-        Utils.updateState(states, new PositiveState());
+        Utils.updateState(getStates(), new PositiveState());
         return this;
     }
 
     public NumberSchema range(Integer pMin, Integer pMax) {
-        Utils.updateState(states, new RangeState(pMin, pMax));
+        Utils.updateState(getStates(), new RangeState(pMin, pMax));
         return this;
     }
 }
