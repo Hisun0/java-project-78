@@ -12,7 +12,7 @@ public class MapSchema extends BaseSchema<Map<String, String>> {
         return this;
     }
 
-    public MapSchema sizeOf(int size) {
+    public MapSchema sizeof(int size) {
         Utils.updateState(states, new SizeOfState(size));
         return this;
     }

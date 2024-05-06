@@ -91,7 +91,7 @@ public class ValidatorTest {
         data.put("key1", "value1");
         assertTrue(schema.isValid(data));
 
-        schema.sizeOf(2);
+        schema.sizeof(2);
 
         assertFalse(schema.isValid(data));
         data.put("key2", "value2");
@@ -100,7 +100,7 @@ public class ValidatorTest {
         Map<String, String> data1 = new HashMap<>();
         data1.put("key1", "value1");
         data1.put("key2", "value2");
-        MapSchema schema1 = validator.map().required().sizeOf(1).sizeOf(2);
+        MapSchema schema1 = validator.map().required().sizeof(1).sizeof(2);
         assertTrue(schema1.isValid(data1));
     }
 
